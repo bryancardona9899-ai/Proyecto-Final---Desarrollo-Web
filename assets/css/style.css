@@ -1,0 +1,590 @@
+/* --- RESET GLOBAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.site-header {
+    background-color: rgba(22, 22, 23, 0.8);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 22px;
+    height: 44px;
+    font-size: 12px;
+    color: #f5f5f7;
+}
+
+.nav-logo {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-search-simple {
+    font-size: 13px;
+    opacity: 0.8;
+    filter: grayscale(100%) brightness(1.5);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* --- SECCIONES GENERALES --- */
+.hero-dark, .product-highlight {
+    padding-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 580px;
+    position: relative;
+}
+
+.light-bg { background-color: #fbfbfd; }
+.blue-light-bg { background-color: #f2f7fd; }
+.dark-bg { background-color: #000; color: #fff; }
+
+.sports-bg {
+    background: linear-gradient(180deg, #2476f1 0%, #0051d1 100%);
+    color: #fff;
+}
+
+.cta-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.btn-blue {
+    background-color: #0071e3;
+    color: #fff;
+    border-radius: 980px;
+}
+
+.btn-pill-blue {
+    background-color: #0071e3;
+    color: #fff;
+    border-radius: 980px;
+    font-weight: bold;
+    padding: 12px 24px;
+}
+
+.btn-link {
+    color: #0071e3;
+}
+
+/* --- 1. HERO DE AIRPODS PRO 3 --- */
+.vinicius-campaign {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 44px);
+    min-height: 600px;
+    max-height: 800px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.vinicius-campaign .hero-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.vinicius-campaign .hero-content-overlay {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    width: 100%;
+    max-width: 640px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.vinicius-campaign .campaign-title {
+    font-size: 54px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.vinicius-campaign .campaign-desc {
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 1.3;
+    max-width: 480px;
+    margin: 0 auto 24px auto;
+    font-weight: 400;
+}
+
+.vinicius-campaign .campaign-desc sup {
+    font-size: 13px;
+    top: -0.4em;
+}
+
+.vinicius-campaign .cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 0;
+}
+
+.vinicius-campaign .btn-info-white {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px 24px;
+    border-radius: 980px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+.vinicius-campaign .btn-info-white:hover { background-color: #f5f5f7; }
+
+.vinicius-campaign .btn-buy-outline {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 11px 24px;
+    border-radius: 980px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+.vinicius-campaign .btn-buy-outline:hover { background-color: rgba(255, 255, 255, 0.1); }
+
+.video-control-btn {
+    position: absolute;
+    top: 30px; 
+    right: 24px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 11px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --- SECCIONES CENTRALES GRANDES (iPhone | MacBook Air) --- */
+.phone-section, .macbook-section {
+    background-color: #fbfbfd;
+    padding-top: 55px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.phone-section .highlight-content, .macbook-section .highlight-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-title-strong {
+    font-size: 56px;
+    font-weight: 600;
+    color: #1d1d1f;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+
+.product-subtitle-clean {
+    font-size: 24px;
+    color: #1d1d1f;
+    font-weight: 400;
+    margin-bottom: 18px;
+    letter-spacing: -0.2px;
+}
+
+.cta-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.btn-pill-solid-blue {
+    background-color: #0071e3;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 11px 23px;
+    border-radius: 980px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+.btn-pill-solid-blue:hover { background-color: #0077ed; }
+
+.btn-pill-outline-blue {
+    background-color: transparent;
+    color: #0071e3;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 23px;
+    border: 1px solid #0071e3;
+    border-radius: 980px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+.btn-pill-outline-blue:hover { background-color: rgba(0, 113, 227, 0.05); }
+
+.img-bottom-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-bottom-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* --- CUADRÍCULA DE TARJETAS --- */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px;
+    background-color: #ffffff;
+}
+
+.grid-card {
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.grid-card.light-bg { background-color: #fbfbfd; }
+.grid-card.dark-bg { background-color: #000000; }
+.grid-card.sports-bg { background: linear-gradient(180deg, #2476f1 0%, #0051d1 100%); }
+
+.grid-card .card-content {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.grid-card .card-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 6px;
+    letter-spacing: -0.2px;
+}
+
+.grid-card .card-desc {
+    font-size: 17px;
+    color: #1d1d1f;
+    margin-bottom: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.text-white { color: #ffffff !important; }
+
+.apple-logo { font-size: 28px; vertical-align: -2px; margin-right: 4px; }
+.apple-logo-dark { font-size: 26px; vertical-align: -2px; margin-right: 4px; color: #1d1d1f; }
+.brand-ipad { font-weight: 600; color: #1d1d1f; }
+.brand-air { font-weight: 400; color: #0071e3; font-style: italic; font-family: "Georgia", serif; }
+
+.grid-card .cta-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-pill-solid-blue-small {
+    background-color: #0071e3;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px 18px;
+    border-radius: 980px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-pill-solid-blue-small:hover { background-color: #0077ed; }
+
+.btn-pill-outline-blue-small {
+    background-color: transparent;
+    color: #0071e3;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 18px;
+    border: 1px solid #0071e3;
+    border-radius: 980px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-pill-solid-white {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 9px 20px;
+    border-radius: 980px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.grid-card .card-img {
+    max-width: 90%;
+    max-height: 250px;
+    object-fit: contain;
+    display: block;
+    margin-top: auto;
+}
+
+
+/* --- CARRUSEL --- */
+.tv-carousel-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 14px;
+    padding: 0 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; 
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none; 
+}
+
+.carousel-slide {
+    position: relative;
+    flex: 0 0 720px;
+    height: 400px;
+    scroll-snap-align: center;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.carousel-slide.side-slide {
+    flex: 0 0 240px; 
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption-overlay {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn-carousel-watch {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 980px;
+    text-decoration: none;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #d2d2d7;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #1d1d1f;
+    width: 20px; 
+    border-radius: 4px;
+}
+
+
+/* --- FOOTER --- */
+.apple-footer {
+    background-color: #f5f5f7;
+    color: #86868b;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 20px 22px 35px 22px;
+    font-size: 11px; 
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+}
+
+.footer-inner {
+    max-width: 980px; 
+    margin: 0 auto;
+}
+
+.footer-disclaimer {
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-disclaimer p {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.footer-disclaimer a {
+    color: #515154;
+    text-decoration: underline;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 20px;
+    align-items: start;
+}
+
+.footer-column-group {
+    display: flex;
+    flex-direction: column;
+    gap: 22px; 
+}
+
+.footer-column h4 {
+    color: #1d1d1f;
+    font-weight: 600;
+    font-size: 11px;
+    margin: 0 0 9px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 7px;
+    line-height: 1.4;
+}
+
+.footer-column ul li a {
+    color: #6e6e73;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #1d1d1f;
+    text-decoration: underline;
+}
+
+.footer-retail {
+    border-top: none;
+    padding-top: 18px;
+    margin-top: 15px;
+    color: #86868b;
+}
+
+.footer-retail .blue-link {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.footer-retail .blue-link:hover {
+    color: #004499;
+}
