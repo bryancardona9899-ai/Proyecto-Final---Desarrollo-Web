@@ -46,7 +46,7 @@ A través de la directiva `@media (max-width: 768px)`, la página web se reestru
 - La cuadrícula de productos pasa automáticamente de 2 columnas a **1 columna completa** optimizando la lectura táctil.
 - Las columnas informativas del footer se contraen a 2 columnas verticales legibles para mitigar colapsos de texto.
 
-## Dificultades Encontradas
+## 8. Dificultades Encontradas
 - * **Superposición en el Hero de Video:** Uno de los mayores retos fue lograr que el contenido de texto y los botones flotaran con precisión por encima del video en reproducción sin romper el flujo semántico.
 - * **Optimización Escrita del Footer:** Replicar la sutileza del pie de página oficial de Apple requirió un ajuste minucioso. El texto tendía a verse tosco o sobredimensionado.
 - * **Comportamiento del Carrusel:** Conseguir que los slides laterales se vieran sutilmente cortados en la periferia de la pantalla (emulando un carrusel infinito en carátulas de Apple TV+) requirió un manejo avanzado de contenedores con scroll horizontal nativo y anchos estáticos compartidos.
